@@ -186,6 +186,10 @@ def delete_third_and_seventh(input_list):
     input_list[2:3] = []
     input_list[5:6] = []
 
+    # OR you can use:
+    # del input_list[2]
+    # del input_list[5]
+
 
 def delete_middle(input_list):
     """Remove all elements from input_list except the first two and last two.
@@ -202,6 +206,8 @@ def delete_middle(input_list):
     """
 
     input_list[2:-2] = []
+    # Or use
+    # del input_list[2:-2]
 
 
 # This is the part were we actually run the doctests.
