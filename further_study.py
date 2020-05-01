@@ -190,11 +190,12 @@ def custom_reverse(input_list):
         True
 
     """
+    
     new_list = input_list[::-1]
     for _ in range(custom_len(input_list)):
         input_list[_] = new_list[_]
 
-    # another solution:
+    # solution 2:
     # swap_number = custom_len(input_list) // 2
 
     # for i in range(swap_number):
@@ -202,6 +203,9 @@ def custom_reverse(input_list):
     #     current_neg_n = input_list[(i + 1) * -1]
     #     input_list[i] = current_neg_n
     #     input_list[(i + 1) * -1] = current_n
+
+    # solution 3:
+    # input_list[:] = input_list[::-1]
 
 
 def custom_contains(input_list, value):
